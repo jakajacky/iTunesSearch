@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2E14C85B9D93E332A87F240E /* Pods_iTunesSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7ED0A099739CE33DE6121B5 /* Pods_iTunesSearch.framework */; };
 		C37C066820E4D7E3008BE259 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37C066720E4D7E3008BE259 /* AppDelegate.swift */; };
-		C37C066A20E4D7E3008BE259 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37C066920E4D7E3008BE259 /* ViewController.swift */; };
+		C37C066A20E4D7E3008BE259 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37C066920E4D7E3008BE259 /* MusicViewController.swift */; };
 		C37C066D20E4D7E3008BE259 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C37C066B20E4D7E3008BE259 /* Main.storyboard */; };
 		C37C067020E4D7E3008BE259 /* iTunesSearch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C37C066E20E4D7E3008BE259 /* iTunesSearch.xcdatamodeld */; };
 		C37C067220E4D7E3008BE259 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C37C067120E4D7E3008BE259 /* Assets.xcassets */; };
@@ -24,7 +24,7 @@
 		BB0731744F0D9DFF9CD7D5B3 /* Pods-iTunesSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTunesSearch/Pods-iTunesSearch.release.xcconfig"; sourceTree = "<group>"; };
 		C37C066420E4D7E3008BE259 /* iTunesSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C37C066720E4D7E3008BE259 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C37C066920E4D7E3008BE259 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C37C066920E4D7E3008BE259 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		C37C066C20E4D7E3008BE259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C37C066F20E4D7E3008BE259 /* iTunesSearch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iTunesSearch.xcdatamodel; sourceTree = "<group>"; };
 		C37C067120E4D7E3008BE259 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				C37C066720E4D7E3008BE259 /* AppDelegate.swift */,
-				C37C066920E4D7E3008BE259 /* ViewController.swift */,
+				C37C066920E4D7E3008BE259 /* MusicViewController.swift */,
 				C38D53A420F3749B0068B208 /* iTunesModels.swift */,
 				C37C067E20E4DBE5008BE259 /* iModels.swift */,
 				C37C066B20E4D7E3008BE259 /* Main.storyboard */,
@@ -174,10 +174,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iTunesSearch/Pods-iTunesSearch-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMAnimatedTabBarController.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -211,7 +213,7 @@
 			files = (
 				C37C067020E4D7E3008BE259 /* iTunesSearch.xcdatamodeld in Sources */,
 				C37C067F20E4DBE5008BE259 /* iModels.swift in Sources */,
-				C37C066A20E4D7E3008BE259 /* ViewController.swift in Sources */,
+				C37C066A20E4D7E3008BE259 /* MusicViewController.swift in Sources */,
 				C38D53A520F3749B0068B208 /* iTunesModels.swift in Sources */,
 				C37C066820E4D7E3008BE259 /* AppDelegate.swift in Sources */,
 			);

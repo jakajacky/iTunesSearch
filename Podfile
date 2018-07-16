@@ -7,4 +7,5 @@ target 'iTunesSearch' do
 
   # Pods for iTunesSearch
   pod 'Alamofire', '~> 4.7'
+  pod 'RAMAnimatedTabBarController'
 end

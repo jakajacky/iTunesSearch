@@ -8,7 +8,7 @@
 
 import UIKit
 import Alamofire
-class ViewController: UIViewController {
+class MusicViewController: UIViewController {
 
     var dataTask: URLSessionDataTask? = nil
     var results: [Art] = []
