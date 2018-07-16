@@ -7,12 +7,32 @@
 //
 
 import UIKit
-
+import Alamofire
 class ViewController: UIViewController {
 
+    var dataTask: URLSessionDataTask? = nil
+    var results: [Art] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        Alamofire.request("https://itunes.apple.com/search?term=all&limit=25").responseJSON { response in // method defaults to `.get`
+            guard response.error == nil else {
+                
+                return
+            }
+            let ress = response.result.value as! NSDictionary
+            print(ress)
+            let decoder = JSONDecoder()
+            do {
+                let json_data = try JSONSerialization.data(withJSONObject: ress["results"] as Any, options: .prettyPrinted)
+                let arts = try decoder.decode([Art].self, from: json_data)
+                print(arts)
+            } catch {
+                print("Error decoding JSON:\(error)")
+            }
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {
